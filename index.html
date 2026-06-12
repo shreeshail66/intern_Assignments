@@ -1,13 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreeshail Portfolio | Web Developer</title>
 
-    <meta name="description" content="Personal portfolio website showcasing skills, projects, and contact information.">
+<title>Shreeshail Portfolio | Web Developer</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta name="description"
+      content="Personal portfolio website showcasing skills, projects, and contact information.">
+
+<meta name="keywords"
+      content="Portfolio, Web Developer, HTML5, CSS3, JavaScript, Responsive Design">
+
+<meta name="author" content="Shreeshail">
+
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph SEO -->
+<meta property="og:title" content="Shreeshail Portfolio">
+<meta property="og:description"
+      content="Personal portfolio website showcasing projects, skills and contact information.">
+<meta property="og:type" content="website">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -16,43 +33,52 @@
     Skip to Main Content
 </a>
 
-<header>
+<header role="banner">
+
     <h1>Shreeshail Portfolio</h1>
 
-    <nav>
+    <nav aria-label="Main Navigation">
+
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
+
 </header>
 
-<main id="main-content">
+<main id="main-content" role="main">
 
-    <section id="home">
+    <section id="home" aria-labelledby="home-heading">
 
         <div class="home-content">
-            <h2>Welcome</h2>
+
+            <h2 id="home-heading">Welcome</h2>
 
             <p>
                 Hello! I'm Shreeshail, a passionate Web Developer
                 focused on building responsive, accessible and
                 user-friendly web applications.
             </p>
+
         </div>
 
         <div class="home-image">
-            <img src="person.jpg"
-                 alt="Portrait of Shreeshail">
+
+            <img
+                src="person.jpg"
+                alt="Portrait of Shreeshail, Web Developer">
+
         </div>
 
     </section>
 
-    <section id="about">
+    <section id="about" aria-labelledby="about-heading">
 
-        <h2>About Me</h2>
+        <h2 id="about-heading">About Me</h2>
 
         <p>
             I am a web developer with knowledge of HTML5,
@@ -62,71 +88,122 @@
         <div class="about-grid">
 
             <article>
+
                 <h3>Education</h3>
-                <p>B.E. in Computer Science and Engineering</p>
+
+                <p>
+                    Bachelor of Engineering (B.E.) in
+                    Computer Science and Engineering.
+                </p>
+
             </article>
 
             <article>
+
                 <h3>Skills</h3>
+
                 <p>
                     HTML5, CSS3, JavaScript,
-                    Bootstrap, Git, GitHub
+                    Bootstrap, Git and GitHub.
                 </p>
+
             </article>
 
         </div>
 
     </section>
 
-    <section id="projects">
+    <section id="projects" aria-labelledby="projects-heading">
 
-        <h2>Projects</h2>
+        <h2 id="projects-heading">Projects</h2>
 
         <div class="projects-grid">
 
             <article>
+
                 <h3>Portfolio Website</h3>
+
                 <p>
                     Responsive personal portfolio website
                     built using HTML5 and CSS3.
                 </p>
+
             </article>
 
             <article>
+
                 <h3>E-Commerce Website</h3>
+
                 <p>
-                    Online shopping platform with product
-                    catalog and user authentication.
+                    Online shopping platform featuring
+                    product catalog management and
+                    user authentication.
                 </p>
+
             </article>
 
             <article>
+
                 <h3>Student Management System</h3>
+
                 <p>
-                    Web application for managing
-                    student records efficiently.
+                    Web application developed for
+                    managing student records and
+                    academic information efficiently.
                 </p>
+
             </article>
 
         </div>
 
     </section>
-    <section id="contact">
 
-        <h2>Contact Me</h2>
+    <section id="contact" aria-labelledby="contact-heading">
 
-        <form>
+        <h2 id="contact-heading">Contact Me</h2>
 
-            <label for="name">Full Name</label>
-            <input type="text" id="name" required>
+        <form
+            action="#"
+            method="post"
+            aria-label="Contact Form">
 
-            <label for="email">Email Address</label>
-            <input type="email" id="email" required>
+            <label for="name">
+                Full Name
+            </label>
 
-            <label for="message">Message</label>
-            <textarea id="message"
-                      rows="5"
-                      required></textarea>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                aria-required="true">
+
+            <label for="email">
+                Email Address
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true">
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                aria-required="true">
+            </textarea>
+
+            <p id="form-message"
+               aria-live="polite">
+            </p>
 
             <button type="submit">
                 Send Message
@@ -138,22 +215,19 @@
 
 </main>
 
-<footer>
+<footer role="contentinfo">
+
     <p>
         &copy; 2026 Shreeshail Portfolio.
-        All Rights Reserved.
+        Made with ❤️ by Shreeshail.
     </p>
+
 </footer>
 
-<button class="theme-toggle"
-        onclick="toggleTheme()">
-    🌙
-</button>
-
 <script>
-function toggleTheme() {
-    document.body.toggleAttribute("data-theme");
-}
+    function toggleTheme() {
+        document.body.toggleAttribute("data-theme");
+    }
 </script>
 
 </body>
