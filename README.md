@@ -6,3 +6,6 @@
 # Assignments-2:Advanced CSS3 & Responsive Architecture
 # Submission Date:12-06-2026
 
+# Assignments-3:JavaScript Logic & State Management
+# Submission Date:12-06-2026
+
