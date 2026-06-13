@@ -3,7 +3,7 @@ const cityInput = document.getElementById("cityInput");
 const weatherCard = document.getElementById("weatherCard");
 
 // OpenWeatherMap API Key
-const apiKey = "04882164ebc96c793dc83514ca059b9c";
+const apiKey = "api key";
 
 async function getWeather(city) {
 
